@@ -1,0 +1,70 @@
+Project Documentation Report
+Project Name: Domain-Specific Language Model with AWS
+GitHub Repository: udacity-ml-project
+
+Project Overview
+The goal of this project is to develop a domain-specific large language model (LLM) capable of generating contextually relevant and accurate responses within the IT domain. The model leverages Meta Llama 2 7B foundation model, fine-tuned using AWS SageMaker. By adapting the model to IT-specific datasets, this project seeks to demonstrate the capabilities of generative AI in solving real-world business challenges, such as creating chatbots, knowledge management systems, and content generation tools.
+
+Steps Completed
+1. Dataset Selection
+Chosen Domain: IT domain
+Dataset Description: The IT dataset includes unstructured text comprising technical documentation, system admin guides, programming references, and IT troubleshooting resources.
+Key Considerations:
+The dataset was copyright-free and relevant to the IT field.
+Focused on covering key IT concepts such as server management, networking, and cloud computing.
+2. Model Deployment and Evaluation (Pre-Fine-Tuning)
+Steps Taken:
+
+Deployed Meta Llama 2 7B on AWS SageMaker using Model_Evaluation.ipynb.
+Tested the model's responses to IT-specific prompts (e.g., cloud computing concepts, debugging techniques).
+Evaluation Observations:
+
+The model provided generic responses, lacking depth in IT-specific queries.
+Showed potential but required fine-tuning for domain-specific expertise.
+Proof: Screenshot of the notebook with cell output uploaded to the GitHub repository.
+
+3. Model Fine-Tuning
+Steps Taken:
+
+Fine-tuned Meta Llama 2 7B using the IT dataset on AWS SageMaker (Model_FineTuning.ipynb).
+Verified the fine-tuned model's weights in the assigned S3 bucket.
+Challenges:
+
+Managing AWS resource costs ($25 budget).
+Optimizing the fine-tuning process to ensure meaningful improvements without overfitting.
+Proof:
+
+Fine-tuning notebook with cell output and S3 bucket screenshot uploaded to the GitHub repository.
+4. Deploy and Evaluate Fine-Tuned Model
+Steps Taken:
+
+Deployed the fine-tuned model and tested its ability to respond to IT-specific queries.
+Evaluated responses for accuracy, relevance, and depth.
+Evaluation Observations:
+
+The fine-tuned model demonstrated significant improvements, providing accurate, detailed, and contextually relevant responses.
+Suitable for applications like chatbots and knowledge management systems in the IT sector.
+Proof: Screenshot of deployment and evaluation notebook (Model_FineTuning.ipynb) with outputs included in the GitHub repository.
+
+Project Deliverables
+Trained Model: Fine-tuned Meta Llama 2 7B for the IT domain.
+Jupyter Notebooks:
+Model_Evaluation.ipynb (pre-fine-tuning evaluation)
+Model_FineTuning.ipynb (fine-tuning and post-fine-tuning evaluation)
+Screenshots: Documenting key milestones (e.g., dataset upload, model deployment, evaluation results).
+S3 Bucket Proof: Verified fine-tuned model weights stored securely.
+GitHub Repository: Comprehensive codebase and documentation available here.
+Challenges and Solutions
+1. Budget Constraints
+Challenge: Limited AWS budget of $25.
+Solution:
+Ensured efficient resource usage by stopping and deleting unused instances.
+Carefully planned model deployment and fine-tuning sessions.
+2. Dataset Preparation
+Challenge: Curating a comprehensive IT dataset.
+Solution: Sourced high-quality, copyright-free materials relevant to IT topics.
+Conclusion
+The project successfully demonstrated the ability to fine-tune a large language model for domain-specific tasks. The fine-tuned Meta Llama 2 7B model excelled in IT-related queries, showcasing its potential for real-world applications.
+
+This project serves as a testament to the power of generative AI and AWS tools in solving business challenges. It also highlights my proficiency in machine learning, natural language processing, and cloud-based AI solutions.
+
