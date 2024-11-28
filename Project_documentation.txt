@@ -1,0 +1,53 @@
+Project Documentation Report
+Project Name: Introducing Generative AI with AWS
+GitHub Repository: udacity-ml-project
+
+1. Pre-trained Model Evaluation
+1.1 Deployment of Pre-trained Model on AWS SageMaker
+Successfully deployed the Llama2 7B pre-trained model on AWS SageMaker.
+Proof of Deployment: Screenshots of the SageMaker console showing the deployed model and the endpoint status are included in the img folder.
+
+Evaluated the model for its ability to generate domain-specific IT-related text using Model_Evaluation.ipynb.
+1.2 Evaluation of Pre-trained Model
+The evaluation involved testing the pre-trained model's ability to handle domain-specific inputs, including IT terminologies and scenarios.
+Observations from Evaluation:
+Responses were generic and lacked depth in IT-specific areas such as system administration and cloud technologies.
+Demonstrated strong capabilities in text coherence and structure, but contextual relevance required improvement.
+Proof of Completion: Model evaluation notebook with output cells has been uploaded to the GitHub repository.
+2. Fine-tuning a Large Language Model
+2.1 Fine-tuning Process
+Fine-tuned the Llama2 7B model using a carefully curated dataset specific to the IT domain.
+Dataset Details:
+Comprised technical guides, programming references, and IT system administration content.
+Stored in an AWS S3 bucket created for the project. Screenshots of the S3 bucket configuration are included in the repository.
+Proof of Fine-tuning:
+Model_FineTuning.ipynb notebook contains detailed steps of the fine-tuning process, including dataset loading, hyperparameter tuning, and model optimization.
+Screenshots of fine-tuning cell outputs are available for verification.
+2.2 Challenges and Resolutions
+Challenge: Managing costs within the $25 AWS budget.
+Solution: Efficiently used SageMaker resources by terminating unused endpoints and minimizing idle time during processing.
+3. Evaluation of Fine-tuned Model
+3.1 Deployment of Fine-tuned Model
+Deployed the fine-tuned model on AWS SageMaker for testing its improved performance.
+Proof of Deployment: Screenshots of the deployment process and model status in the SageMaker console.
+3.2 Evaluation of Fine-tuned Model
+Evaluated the fine-tuned model's ability to respond to IT-specific queries and generate relevant, contextually accurate text.
+Results:
+Demonstrated a significant improvement in understanding IT-related prompts.
+Provided detailed and accurate responses for topics such as server management, cloud computing, and debugging techniques.
+Comparison with Pre-trained Model: The fine-tuned model significantly outperformed the pre-trained version in domain-specific text generation tasks.
+4. Key Deliverables
+Trained Models:
+Pre-trained and fine-tuned Llama2 7B models for IT-specific text generation.
+Notebooks:
+Model_Evaluation.ipynb for pre-trained model evaluation.
+Model_FineTuning.ipynb for fine-tuning and evaluation of the refined model.
+Proof of Work:
+Screenshots of SageMaker deployments, notebook outputs, and S3 bucket configurations.
+GitHub Repository: Comprehensive project files and documentation uploaded here.
+Summary of Improvements Post Fine-tuning
+Enhanced contextual accuracy in IT-related text generation.
+Improved responses to domain-specific prompts, demonstrating expertise in IT terminologies.
+Seamless integration with AWS tools for deployment and testing.
+Conclusion
+This project illustrates the potential of generative AI in addressing real-world challenges by fine-tuning a large language model for domain-specific applications. The fine-tuned Llama2 model excels in IT domain knowledge, making it suitable for use cases such as chatbots, internal knowledge bases, and content generation.
